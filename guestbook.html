@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>留言板 - Hello Kitty 粉色小世界</title>
+<meta name="keywords" content="Hello Kitty,留言板,粉丝留言,凯蒂猫">
+<meta name="description" content="Hello Kitty 粉色小世界留言板，写下你和凯蒂猫的故事，也可以只是来看看。">
+</head>
+
+<body bgcolor="#FFF5F9" background="bg_tile.png" text="#4A3B42" link="#D6336C" vlink="#A61E4D" alink="#FF6FA5">
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FF6FA5">
+  <tr>
+    <td width="580" height="88" align="left" valign="middle">
+      <font face="微软雅黑" color="#FFFFFF" size="6"><b>&nbsp;&nbsp;Hello Kitty</b></font><br>
+      <font face="微软雅黑" color="#FFE7F1" size="2">&nbsp;&nbsp;粉 色 小 世 界 · 甜 心 收 藏 馆</font>
+    </td>
+    <td align="right" valign="middle">
+      <font face="微软雅黑" size="3" color="#FFFFFF">
+        <a href="index.html"><font color="#FFFFFF">首　页</font></a>　｜　
+        <a href="about.html"><font color="#FFFFFF">角色介绍</font></a>　｜　
+        <font color="#FFE7F1"><b>留言板</b></font>
+      </font>&nbsp;&nbsp;&nbsp;
+    </td>
+  </tr>
+</table>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFC0D8">
+  <tr>
+    <td height="450"><img src="banner3.jpg" width="1220" height="450" border="0" alt="Hello Kitty 留言板"></td>
+  </tr>
+  <tr>
+    <td height="58" align="center" valign="middle" bgcolor="#FF7FAC">
+      <font face="微软雅黑" color="#FFFFFF" size="5"><b>把你和她的事，留在这里</b></font>
+    </td>
+  </tr>
+</table>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF">
+  <tr>
+    <td height="40" align="left" valign="middle">
+      <font face="微软雅黑" size="2" color="#C98AA6">&nbsp;&nbsp;当前位置：<a href="index.html">首页</a> &gt; 留言板</font>
+    </td>
+    <td align="right" valign="middle">
+      <font face="微软雅黑" size="2" color="#C98AA6">目前共有 <b><font color="#D6336C" id="total">0</font></b> 条留言</font>&nbsp;&nbsp;
+    </td>
+  </tr>
+</table>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFE9F2">
+  <tr>
+    <td height="46" align="left" valign="middle">
+      <font face="微软雅黑" size="4" color="#D6336C"><b>&nbsp;&nbsp;◆ 写 下 你 的 留 言</b></font>
+    </td>
+    <td align="right" valign="middle"><font face="微软雅黑" size="1" color="#C98AA6">昵称和内容为必填，留言会立即显示在下方</font>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+<form name="gbForm" method="post" action="guestbook.html" onsubmit="return postMsg();">
+<table width="1220" border="0" cellpadding="0" cellspacing="1" align="center" bgcolor="#FFC0D8">
+  <tr>
+    <td width="150" height="54" bgcolor="#FFF5F9" align="center" valign="middle"><font face="微软雅黑" size="2" color="#B04A72"><b>你 的 昵 称</b></font></td>
+    <td bgcolor="#FFFFFF" valign="middle">&nbsp;&nbsp;<input type="text" name="nick" size="20" maxlength="16"></td>
+    <td width="150" bgcolor="#FFF5F9" align="center" valign="middle"><font face="微软雅黑" size="2" color="#B04A72"><b>联 系 邮 箱</b></font></td>
+    <td width="320" bgcolor="#FFFFFF" valign="middle">&nbsp;&nbsp;<input type="text" name="mail" size="26" maxlength="40">&nbsp;<font face="微软雅黑" size="1" color="#C98AA6">选填</font></td>
+  </tr>
+  <tr>
+    <td height="54" bgcolor="#FFF5F9" align="center" valign="middle"><font face="微软雅黑" size="2" color="#B04A72"><b>留 言 标 题</b></font></td>
+    <td colspan="3" bgcolor="#FFFFFF" valign="middle">&nbsp;&nbsp;<input type="text" name="title" size="52" maxlength="40">&nbsp;<font face="微软雅黑" size="1" color="#C98AA6">选填</font></td>
+  </tr>
+  <tr>
+    <td height="190" bgcolor="#FFF5F9" align="center" valign="top"><br><br><font face="微软雅黑" size="2" color="#B04A72"><b>留 言 内 容</b></font></td>
+    <td colspan="3" bgcolor="#FFFFFF" valign="top"><br>&nbsp;&nbsp;<textarea name="content" rows="8" cols="96"></textarea></td>
+  </tr>
+  <tr>
+    <td colspan="4" height="64" bgcolor="#FFF5F9" align="center" valign="middle">
+      <input type="submit" value="　发 表 留 言　">　　<input type="reset" value="　重 新 填 写　">
+    </td>
+  </tr>
+</table>
+</form>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center"><tr><td height="26"></td></tr></table>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFE9F2">
+  <tr>
+    <td height="46" align="left" valign="middle">
+      <font face="微软雅黑" size="4" color="#D6336C"><b>&nbsp;&nbsp;◆ 大 家 的 留 言</b></font>
+    </td>
+    <td align="right" valign="middle"><font face="微软雅黑" size="1" color="#C98AA6">按发表时间倒序排列</font>&nbsp;&nbsp;</td>
+  </tr>
+</table>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="1" align="center" bgcolor="#FFC0D8" id="gbList">
+</table>
+
+<br>
+
+<table width="1220" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FF6FA5">
+  <tr>
+    <td height="36" align="center" valign="middle">
+      <font face="微软雅黑" size="2" color="#FFFFFF">
+        <a href="index.html"><font color="#FFFFFF">首页</font></a>　｜　
+        <a href="about.html"><font color="#FFFFFF">角色介绍</font></a>　｜　
+        <a href="guestbook.html"><font color="#FFFFFF">留言板</font></a>
+      </font>
+    </td>
+  </tr>
+  <tr>
+    <td height="52" align="center" valign="middle"><p><font face="微软雅黑" size="2" color="#FFE7F1">@Hello Kitty粉色小世界 保留所有权利</font></p>
+    <p><font face="微软雅黑" size="2" color="#FFE7F1">联系邮箱：1958396475@qq.com </font></p></td>
+  </tr>
+</table>
+
+<br>
+
+<script type="text/javascript">
+var KEY = 'kitty_guestbook_v1';
+var FACE = ['pic3.jpg', 'pic1.jpg', 'pic5.jpg', 'pic2.jpg', 'pic6.jpg', 'pic4.jpg'];
+var seed = [
+  { n: '奶油布丁', t: '2026-11-22 20:14', ti: '小学的铅笔盒', c: '小学三年级那个铅笔盒上印的就是她，粉色的，一打开还有小镜子。用了三年舍不得换，最后是锁扣坏了才收起来，现在还在抽屉里。' },
+  { n: '粉色小陀螺', t: '2026-11-20 09:02', ti: '', c: '每次心情不好就翻她的图，看着看着就好了。没有嘴巴这件事真的很神，她好像什么都懂。' },
+  { n: '伦敦不下雨', t: '2026-11-19 23:47', ti: '想去看展', c: '去年在大阪看过一次展，排队两个小时，进去十分钟就哭了。旁边的小朋友一直问我怎么了，我说没事，是高兴。' },
+  { n: 'Kitty 老妈子', t: '2026-11-11 15:30', ti: '给女儿买的第一个', c: '女儿今年四岁，第一个娃娃是她的，睡觉要抱着。希望她也能记二十年。' },
+  { n: '甜筒不加糖', t: '2026-11-03 11:18', ti: '', c: '站里的壁纸都存了，谢谢站长一直更新。粉色图集那一页建议再加几张，完全不够看。' }
+];
+
+function esc(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function read() {
+  try {
+    var raw = window.localStorage.getItem(KEY);
+    if (!raw) return seed.slice(0);
+    var arr = JSON.parse(raw);
+    if (!arr || !arr.length) return seed.slice(0);
+    return arr;
+  } catch (e) {
+    return seed.slice(0);
+  }
+}
+
+function save(arr) {
+  try { window.localStorage.setItem(KEY, JSON.stringify(arr)); } catch (e) {}
+}
+
+function pad(x) { return x < 10 ? '0' + x : '' + x; }
+
+function now() {
+  var d = new Date();
+  return d.getFullYear() + '-' + pad(d.getMonth() + 1) + '-' + pad(d.getDate()) + ' ' + pad(d.getHours()) + ':' + pad(d.getMinutes());
+}
+
+function render() {
+  var arr = read();
+  var box = document.getElementById('gbList');
+  var html = '';
+  for (var i = 0; i < arr.length; i++) {
+    var m = arr[i];
+    var floor = arr.length - i;
+    var face = FACE[i % FACE.length];
+    var title = m.ti ? '<br><font face="微软雅黑" size="2" color="#D6336C"><b>' + esc(m.ti) + '</b></font>' : '';
+    html += '<tr>'
+      + '<td width="76" bgcolor="#FFF5F9" align="center" valign="top"><br><img src="' + face + '" width="54" height="54" border="0" alt=""><br><br><font face="微软雅黑" size="1" color="#C98AA6">' + floor + ' 楼</font><br><br></td>'
+      + '<td bgcolor="#FFFFFF" valign="top"><br>'
+      + '<font face="微软雅黑" size="3" color="#D6336C"><b>' + esc(m.n) + '</b></font>'
+      + '<font face="微软雅黑" size="1" color="#C98AA6">　发表于 ' + esc(m.t) + '</font>'
+      + title
+      + '<br><br><font face="微软雅黑" size="2" color="#4A3B42">' + esc(m.c) + '</font><br><br>'
+      + '</td></tr>';
+  }
+  box.innerHTML = html;
+  document.getElementById('total').innerHTML = arr.length;
+}
+
+function postMsg() {
+  var f = document.forms['gbForm'];
+  var n = f.nick.value.replace(/^\s+|\s+$/g, '');
+  var c = f.content.value.replace(/^\s+|\s+$/g, '');
+  var ti = f.title.value.replace(/^\s+|\s+$/g, '');
+  if (n === '') { alert('请先填写你的昵称'); f.nick.focus(); return false; }
+  if (c === '') { alert('留言内容不能为空'); f.content.focus(); return false; }
+  if (c.length > 300) { alert('留言内容请控制在 300 字以内'); f.content.focus(); return false; }
+  var arr = read();
+  arr.unshift({ n: n, t: now(), ti: ti, c: c });
+  if (arr.length > 60) arr = arr.slice(0, 60);
+  save(arr);
+  render();
+  f.reset();
+  alert('留言已发表，谢谢你的到来');
+  return false;
+}
+
+render();
+</script>
+
+</body>
+</html>
